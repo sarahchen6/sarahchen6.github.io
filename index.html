@@ -8,15 +8,15 @@
 
  
   <meta name="google-site-verification" content="bnoFBnIUa_ExNW78iL9iiIrJdu4iq-eO1TFCVn_mBQ4">
-   <meta name="author" content="Siddha Ganju">
-<meta name="keywords" content="siddha ganju,sidgan,cmu,cern,carnegie mellon university,cern openlab,Machine Learning,deep learning,artificial intelligence,computer science,deep vision,strata,siddha,ganju,openlab, cvpr, cvpr2017">
-  <meta name="description" content="What’s in a Question: Using Visual Questions as a Form of Supervision">
+   <meta name="author" content="Sarah Chen, Esther Cao">
+<meta name="keywords" content="sarah chen,esther cao,cmu,carnegie mellon university,swath gaps,Machine Learning,swath gaps,unsupervised machine learning,NASA MODIS instruments">
+  <meta name="description" content="Reducing Effects of Swath Gaps on Unsupervised Machine Learning Models for NASA MODIS Instruments">
 
-<meta name="title" content="What’s in a Question: Using Visual Questions as a Form of Supervision">
+<meta name="title" content="Reducing Effects of Swath Gaps on Unsupervised Machine Learning Models for NASA MODIS Instruments">
 
 
 
-  <title>Hello World</title>
+  <title>Reducing Effects of Swath Gaps on Unsupervised Machine Learning Models for NASA MODIS Instruments</title>
 
   <!-- bootstrap -->
   <link rel="stylesheet" href="./What’s in a Question_ Using Visual Questions as a Form of Supervision_files/bootstrap.min.css">
@@ -43,7 +43,7 @@
   <a href="http://www.cmu.edu/">
     <img src="./What’s in a Question_ Using Visual Questions as a Form of Supervision_files/1024px-Carnegie_Mellon_University_seal.svg.png" style="height:60px; float: right; margin-right: 60px;">
   </a>
-  <h1><b>What’s in a Question</b>: Using Visual Questions as a Form of Supervision </h1>
+  <h1>Reducing Effects of Swath Gaps on Unsupervised Machine Learning Models for NASA MODIS Instruments</h1>
   <div style="clear:both;"></div>
 </div>
 
@@ -57,7 +57,7 @@
   <h2>Abstract</h2>
 
   <div id="coursedesc">
-Collecting fully annotated image datasets is challenging and expensive. Many types of weak supervision have been explored: weak manual annotations, web search results, temporal continuity, ambient sound and others. We focus on one particular unexplored mode: visual questions that are asked about images. The key observation that inspires our work is that the question itself provides useful information about the image (even without the answer being available). For instance, the question "what is the breed of the dog?" informs the AI that the animal in the scene is a dog and that there is only one dog present. We make three contributions: (1) providing an extensive qualitative and quantitative analysis of the information contained in human visual questions, (2) proposing two simple but surprisingly effective modifications to the standard visual question answering models that allow them to make use of weak supervision in the form of unanswered questions associated with images and (3) demonstrating that a simple data augmentation strategy inspired by our insights results in a 7.1% improvement on the standard VQA benchmark.
+Due to the nature of their pathways, NASA Terra and NASA Aqua satellites capture imagery containing “swath gaps'' which are areas of no data. Swath gaps can overlap the region of interest (ROI) completely, often rendering the entire imagery unusable by Machine Learning (ML) models. This problem is further exacerbated when the ROI rarely occurs (e.g. a hurricane) and, on occurrence, is partially overlapped with a swath gap. With annotated data as supervision, a model can learn to differentiate between the area of focus and the swath gap. However, annotation is expensive and currently the vast majority of existing data is unannotated. Hence, we propose an augmentation technique that considerably removes the existence of swath gaps in order to allow CNNs to focus on the ROI, and thus successfully use data with swath gaps for training. We experiment on the UC Merced Land Use Dataset, where we add swath gaps through empty polygons (up to 20% areas) and then apply augmentation techniques to fill the swath gaps. We compare the model trained with our augmentation techniques on the swath gap-filled data with the model trained on the original swath gap-less data and note highly augmented performance. Additionally, we perform a qualitative analysis using activation maps that visualizes the effectiveness of our trained network in not paying attention to the swath gaps. We also evaluate our results with a human baseline and show that, in certain cases, the filled swath gaps look so realistic that even a human evaluator did not distinguish between original satellite images and swath gap-filled images. Since this method is aimed at unlabeled data, it is widely generalizable and impactful for large scale unannotated datasets from various space data domains. 
   </div>
 </div>
 </div>
@@ -212,13 +212,11 @@ Visual Question Answering is, given an image and a natural language question abo
 
 <div class="sechighlight">
 <div id="footer">
-
-This research is supported by ONR MURI.
   
 <br>
 <br>
 
-We would like to thank ___ for helpful discussions. 
+We would like to thank Anirudh Koul, Siddha Ganju, Meher Anand Kasam, and Satyarth Praveen for helpful discussions. 
 <br>
 <br>
 

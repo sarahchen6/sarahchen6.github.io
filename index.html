@@ -37,6 +37,10 @@
 <body onload="page_loaded()">
 
 <div id="header">
+  <a href="http://cvpr2017.thecvf.com/">
+    <img src="./space_ml_logo.png" style="height:60px; float: left; margin-left: 20px;">
+  </a>
+  
   <a href="http://www.cmu.edu/">
     <img src="./1024px-Carnegie_Mellon_University_seal.svg.png" style="height:60px; float: right; margin-right: 60px;">
   </a>
@@ -55,7 +59,7 @@
   <h2>Abstract</h2>
 
   <div id="coursedesc">
-Due to the nature of their pathways, NASA Terra and NASA Aqua satellites capture imagery containing “swath gaps'' which are areas of no data. Swath gaps can overlap the region of interest (ROI) completely, often rendering the entire imagery unusable by Machine Learning (ML) models. This problem is further exacerbated when the ROI rarely occurs (e.g. a hurricane) and, on occurrence, is partially overlapped with a swath gap. With annotated data as supervision, a model can learn to differentiate between the area of focus and the swath gap. However, annotation is expensive and currently the vast majority of existing data is unannotated. Hence, we propose an augmentation technique that considerably removes the existence of swath gaps in order to allow CNNs to focus on the ROI, and thus successfully use data with swath gaps for training. We experiment on the UC Merced Land Use Dataset, where we add swath gaps through empty polygons (up to 20% areas) and then apply augmentation techniques to fill the swath gaps. We compare the model trained with our augmentation techniques on the swath gap-filled data with the model trained on the original swath gap-less data and note highly augmented performance. Additionally, we perform a qualitative analysis using activation maps that visualizes the effectiveness of our trained network in not paying attention to the swath gaps. We also evaluate our results with a human baseline and show that, in certain cases, the filled swath gaps look so realistic that even a human evaluator did not distinguish between original satellite images and swath gap-filled images. Since this method is aimed at unlabeled data, it is widely generalizable and impactful for large scale unannotated datasets from various space data domains. 
+    Due to the nature of their pathways, NASA Terra and NASA Aqua satellites capture imagery containing “swath gaps'' which are areas of no data. Swath gaps can overlap the region of interest (ROI) completely, often rendering the entire imagery unusable by Machine Learning (ML) models. This problem is further exacerbated when the ROI rarely occurs (e.g. a hurricane) and, on occurrence, is partially overlapped with a swath gap. With annotated data as supervision, a model can learn to differentiate between the area of focus and the swath gap. However, annotation is expensive and currently the vast majority of existing data is unannotated. Hence, we propose an augmentation technique that considerably removes the existence of swath gaps in order to allow CNNs to focus on the ROI, and thus successfully use data with swath gaps for training. We experiment on the UC Merced Land Use Dataset, where we add swath gaps through empty polygons (up to 20% areas) and then apply augmentation techniques to fill the swath gaps. We compare the model trained with our augmentation techniques on the swath gap-filled data with the model trained on the original swath gap-less data and note highly augmented performance. Additionally, we perform a qualitative analysis using activation maps that visualizes the effectiveness of our trained network in not paying attention to the swath gaps. We also evaluate our results with a human baseline and show that, in certain cases, the filled swath gaps look so realistic that even a human evaluator did not distinguish between original satellite images and swath gap-filled images. Since this method is aimed at unlabeled data, it is widely generalizable and impactful for large scale unannotated datasets from various space data domains. 
   </div>
 </div>
 </div>
@@ -65,7 +69,7 @@ Due to the nature of their pathways, NASA Terra and NASA Aqua satellites capture
 <!-- <a href="../densecap.pdf" style="font-size:22px">Paper</a><br> -->
 
 <a href="https://arxiv.org/pdf/1704.03895.pdf">
-  <img src="./What’s in a Question_ Using Visual Questions as a Form of Supervision_files/paper.png" style="width:100%;border: 1px solid #AAA;">
+  <img src="./essay_thumbnail.png" style="width:100%;border: 1px solid #AAA;">
 </a>
 
 <br>
@@ -80,12 +84,6 @@ Due to the nature of their pathways, NASA Terra and NASA Aqua satellites capture
     <a href="http://www.cs.cmu.edu/~orussako/index.html">
     <div class="instructorphoto"><img src="./What’s in a Question_ Using Visual Questions as a Form of Supervision_files/OlgaRussakovsky_highres.JPG"></div>
     <div>Olga Russakovsky</div>
-    </a>
-  </div>
-  <div class="instructor" align="center">
-    <a href="http://www.cs.cmu.edu/~abhinavg/">
-    <div class="instructorphoto"><img src="./What’s in a Question_ Using Visual Questions as a Form of Supervision_files/me.jpg"></div>
-    <div>Abhinav Gupta</div>
     </a>
   </div>
 </div>
@@ -226,8 +224,8 @@ Thank you Salvador Medina for helping generate the <a href="https://github.com/s
 
 
 <!-- jQuery and Boostrap -->
-<script src="./What’s in a Question_ Using Visual Questions as a Form of Supervision_files/jquery.min.js"></script>
-<script src="./What’s in a Question_ Using Visual Questions as a Form of Supervision_files/bootstrap.min.js"></script>
+<script src="./jquery.min.js"></script>
+<script src="./bootstrap.min.js"></script>
 
 <!-- Analytics -->
 

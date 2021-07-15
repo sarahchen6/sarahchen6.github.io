@@ -105,14 +105,16 @@
 
   <h2>1. Swath Gaps</h2>
   We address the problem that swath gaps create when present in unlabeled image datasets that are used to train unsupervised machine learning models. The following is an example of swath gaps present due to NASA Terra and NASA Aqua satellite pathways.
+  <br>
     <div id="gallery" align="center">
       <div class="egimg" align="center">
-        <img src="./earth_swath_gaps.png" style="width:700px; height:300px;">
+        <img src="./earth_swath_gaps.png" style="width: 100%;">
       </div>
     </div>
 
   <h2>2. Filling Methods</h2>
   We resolve the problem that swath gaps pose by experimenting with three different methods: Random RGB (filling the swath gap with randomly selected RGB pixels), Pixel RGB (filling the swath gap with randomly selected RGB pixels from the image), and Neighbor RGB (filling the swath gap with randomly selected RGB pixels from a dynamic radius of the given pixel to be filled).
+  <br>
     <div id="gallery" align="center">
       <div class="egimg">
         <img src="./filling_methods.png" style="width: 100%;">
@@ -121,9 +123,10 @@
 
   <h2>3. Activation Maps</h2>
   One way in which we assess our fill methods is by analyzing the effects they have on activation maps as seen below.
-    <div id="gallery" align="center">
+  <br>
+    <div id="gallery" align="center" style="width: 700px;>
       <div class="egimg" align="center">
-        <img src="./swath_gap_activation_maps.png" style="width: 50%;">
+        <img src="./swath_gap_activation_maps.png" style="width: 100%;">
       </div>
     </div>
 </div>

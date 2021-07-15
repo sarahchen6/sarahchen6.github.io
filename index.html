@@ -2,19 +2,13 @@
 <!-- saved from url=(0139)file:///Users/esther-cao/Downloads/What%E2%80%99s%20in%20a%20Question_%20Using%20Visual%20Questions%20as%20a%20Form%20of%20Supervision.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
- 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="bnoFBnIUa_ExNW78iL9iiIrJdu4iq-eO1TFCVn_mBQ4">
-   <meta name="author" content="Sarah Chen, Esther Cao">
-<meta name="keywords" content="sarah chen,esther cao,cmu,carnegie mellon university,swath gaps,Machine Learning,swath gaps,unsupervised machine learning,NASA MODIS instruments">
+  <meta name="author" content="Sarah Chen, Esther Cao">
+  <meta name="keywords" content="sarah chen,esther cao,cmu,carnegie mellon university,swath gaps,Machine Learning,swath gaps,unsupervised machine learning,NASA MODIS instruments">
   <meta name="description" content="Reducing Effects of Swath Gaps on Unsupervised Machine Learning Models for NASA MODIS Instruments">
-
-<meta name="title" content="Reducing Effects of Swath Gaps on Unsupervised Machine Learning Models for NASA MODIS Instruments">
-
-
+  <meta name="title" content="Reducing Effects of Swath Gaps on Unsupervised Machine Learning Models for NASA MODIS Instruments">
 
   <title>Reducing Effects of Swath Gaps on Unsupervised Machine Learning Models for NASA MODIS Instruments</title>
 
@@ -28,10 +22,11 @@
   <!-- Google Analytics -->
   <link rel="stylesheet" type="text/css" href="./style.css">
 
-  <script async="" src="./analytics.js"></script><script async="" src="./analytics(1).js"></script><script async="" src="./analytics(2).js"></script><script>
-  function page_loaded() {
-  }
-  </script>
+  <script async="" src="./analytics.js"></script>
+  <script async="" src="./analytics(1).js"></script>
+  <script async="" src="./analytics(2).js"></script>
+  <script> function page_loaded() {} </script>
+  
 </head>
 
 <body onload="page_loaded()">
@@ -40,7 +35,6 @@
   <a href="http://cvpr2017.thecvf.com/">
     <img src="./space_ml_logo.png" style="height:20px; float:left; margin-left:20px; margin-top:20px">
   </a>
-  
   <a href="http://www.cmu.edu/">
     <img src="./1024px-Carnegie_Mellon_University_seal.svg.png" style="height:60px; float:right; margin-right:60px;">
   </a>
@@ -56,7 +50,6 @@
 <div class="sechighlight">
 <div class="container sec">
   <h2>Abstract</h2>
-
   <div id="coursedesc">
     Due to the nature of their pathways, NASA Terra and NASA Aqua satellites capture imagery containing “swath gaps'' which are areas of no data. Swath gaps can overlap the region of interest (ROI) completely, often rendering the entire imagery unusable by Machine Learning (ML) models. This problem is further exacerbated when the ROI rarely occurs (e.g. a hurricane) and, on occurrence, is partially overlapped with a swath gap. With annotated data as supervision, a model can learn to differentiate between the area of focus and the swath gap. However, annotation is expensive and currently the vast majority of existing data is unannotated. Hence, we propose an augmentation technique that considerably removes the existence of swath gaps in order to allow CNNs to focus on the ROI, and thus successfully use data with swath gaps for training. We experiment on the UC Merced Land Use Dataset, where we add swath gaps through empty polygons (up to 20% areas) and then apply augmentation techniques to fill the swath gaps. We compare the model trained with our augmentation techniques on the swath gap-filled data with the model trained on the original swath gap-less data and note highly augmented performance. Additionally, we perform a qualitative analysis using activation maps that visualizes the effectiveness of our trained network in not paying attention to the swath gaps. We also evaluate our results with a human baseline and show that, in certain cases, the filled swath gaps look so realistic that even a human evaluator did not distinguish between original satellite images and swath gap-filled images. Since this method is aimed at unlabeled data, it is widely generalizable and impactful for large scale unannotated datasets from various space data domains. 
   </div>
@@ -64,13 +57,10 @@
 </div>
 
 <div class="container sec" align="center">
-
 <!-- <a href="../densecap.pdf" style="font-size:22px">Paper</a><br> -->
-
 <a href="https://arxiv.org/pdf/1704.03895.pdf">
   <img src="./essay_thumbnail.png" style="width:100%;border: 1px solid #AAA;">
 </a>
-
 <br>
 <div align="center">
   <div class="instructor" align="center">
@@ -89,15 +79,12 @@
 <!--  <p> Spotlight, CVPR 2017 </p>
  <p> <a href="http://languageandvision.com/">Spotlight, Language and Vision workshop</a> </p>
  <p> <a href="http://www.visualqa.org/abstracts.html"> Poster, VQA workshop</a> </p> -->
-
- </div>
-
+</div>
 </div>
 
 <div class="sechighlight">
 <div class="container sec" style="font-size:18px">
   <div class="row">
-
     <div class="col-md-5">
       <h2>Links</h2>
       <ul>
@@ -109,21 +96,19 @@
     </div>
     <div class="col-md-7">
       <h2>Bibtex</h2>
-<pre style="font-size:12px;">@article{cao2020swathgaps,
-title={Reducing Effects of Swath Gaps in Unsupervised Machine Learning},
-author={Chen, Sarah and Cao, Esther and Koul, Anirudh and Ganju, Siddha and Praveen, Satyarth and Kasam, Meher Anand},
-journal={Committee on Space Research Machine Learning for Space Sciences Workshop},
-year={2021}
-}
-</pre>
+      <pre style="font-size:12px;">@article{cao2020swathgaps,
+        title={Reducing Effects of Swath Gaps in Unsupervised Machine Learning},
+        author={Chen, Sarah and Cao, Esther and Koul, Anirudh and Ganju, Siddha and Praveen, Satyarth and Kasam, Meher Anand},
+        journal={Committee on Space Research Machine Learning for Space Sciences Workshop},
+        year={2021}
+        }
+      </pre>
     </div>
-
   </div>
 </div>
 </div>
 
 <div class="container sec">
-
 
   <h2></h2>
 
@@ -193,45 +178,31 @@ Visual Question Answering is, given an image and a natural language question abo
 
 <div class="sechighlight">
 <div id="footer">
-  
 <br>
 <br>
-
 We would like to thank Anirudh Koul, Siddha Ganju, Meher Anand Kasam, and Satyarth Praveen for helpful discussions. 
 <br>
 <br>
-
 Website code reference: 
 <a href="http://cs.stanford.edu/people/karpathy/densecap/">DenseCap: Fully Convolutional Localization Networks for Dense Captioning</a>
 <br>
 <br>
-
 Thank you Salvador Medina for helping generate the <a href="https://github.com/salmedina/pdf2thumb">pretty pdf.</a>
-
-
 </div>
 </div>
-
 
 <!-- jQuery and Boostrap -->
 <script src="./jquery.min.js"></script>
 <script src="./bootstrap.min.js"></script>
 
 <!-- Analytics -->
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-59744528-2', 'auto');
   ga('send', 'pageview');
-
 </script>
-
-
-
-
 
 </body></html>

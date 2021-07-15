@@ -48,38 +48,38 @@
 -->
 
 <div class="sechighlight">
-<div class="container sec">
-  <h2>Abstract</h2>
-  <div id="coursedesc">
-    Due to the nature of their pathways, NASA Terra and NASA Aqua satellites capture imagery containing “swath gaps'' which are areas of no data. Swath gaps can overlap the region of interest (ROI) completely, often rendering the entire imagery unusable by Machine Learning (ML) models. This problem is further exacerbated when the ROI rarely occurs (e.g. a hurricane) and, on occurrence, is partially overlapped with a swath gap. With annotated data as supervision, a model can learn to differentiate between the area of focus and the swath gap. However, annotation is expensive and currently the vast majority of existing data is unannotated. Hence, we propose an augmentation technique that considerably removes the existence of swath gaps in order to allow CNNs to focus on the ROI, and thus successfully use data with swath gaps for training. We experiment on the UC Merced Land Use Dataset, where we add swath gaps through empty polygons (up to 20% areas) and then apply augmentation techniques to fill the swath gaps. We compare the model trained with our augmentation techniques on the swath gap-filled data with the model trained on the original swath gap-less data and note highly augmented performance. Additionally, we perform a qualitative analysis using activation maps that visualizes the effectiveness of our trained network in not paying attention to the swath gaps. We also evaluate our results with a human baseline and show that, in certain cases, the filled swath gaps look so realistic that even a human evaluator did not distinguish between original satellite images and swath gap-filled images. Since this method is aimed at unlabeled data, it is widely generalizable and impactful for large scale unannotated datasets from various space data domains. 
+  <div class="container sec">
+    <h2>Abstract</h2>
+    <div id="coursedesc">
+      Due to the nature of their pathways, NASA Terra and NASA Aqua satellites capture imagery containing “swath gaps'' which are areas of no data. Swath gaps can overlap the region of interest (ROI) completely, often rendering the entire imagery unusable by Machine Learning (ML) models. This problem is further exacerbated when the ROI rarely occurs (e.g. a hurricane) and, on occurrence, is partially overlapped with a swath gap. With annotated data as supervision, a model can learn to differentiate between the area of focus and the swath gap. However, annotation is expensive and currently the vast majority of existing data is unannotated. Hence, we propose an augmentation technique that considerably removes the existence of swath gaps in order to allow CNNs to focus on the ROI, and thus successfully use data with swath gaps for training. We experiment on the UC Merced Land Use Dataset, where we add swath gaps through empty polygons (up to 20% areas) and then apply augmentation techniques to fill the swath gaps. We compare the model trained with our augmentation techniques on the swath gap-filled data with the model trained on the original swath gap-less data and note highly augmented performance. Additionally, we perform a qualitative analysis using activation maps that visualizes the effectiveness of our trained network in not paying attention to the swath gaps. We also evaluate our results with a human baseline and show that, in certain cases, the filled swath gaps look so realistic that even a human evaluator did not distinguish between original satellite images and swath gap-filled images. Since this method is aimed at unlabeled data, it is widely generalizable and impactful for large scale unannotated datasets from various space data domains. 
+    </div>
   </div>
-</div>
 </div>
 
 <div class="container sec" align="center">
-<!-- <a href="../densecap.pdf" style="font-size:22px">Paper</a><br> -->
-<a href="https://arxiv.org/pdf/1704.03895.pdf">
-  <img src="./essay_thumbnail.png" style="width:100%;border: 1px solid #AAA;">
-</a>
-<br>
-<div align="center">
-  <div class="instructor" align="center">
-    <div class="instructorphoto"><img src="./1024px-Carnegie_Mellon_University_seal.svg.png"></div>
-    <div>Esther Cao</div>
+  <!-- <a href="../densecap.pdf" style="font-size:22px">Paper</a><br> -->
+  <a href="https://arxiv.org/pdf/1704.03895.pdf">
+    <img src="./essay_thumbnail.png" style="width:100%;border: 1px solid #AAA;">
+  </a>
+  <br>
+  <div align="center">
+    <div class="instructor" align="center">
+      <div class="instructorphoto"><img src="./1024px-Carnegie_Mellon_University_seal.svg.png"></div>
+      <div>Esther Cao</div>
+    </div>
+    <div class="instructor" align="center">
+      <a href="https://www.linkedin.com/in/sarahchen6/">
+      <div class="instructorphoto"><img src="./professional_prof_pic.JPG"></div>
+      <div>Sarah Chen</div>
+      </a>
+    </div>
   </div>
-  <div class="instructor" align="center">
-    <a href="https://www.linkedin.com/in/sarahchen6/">
-    <div class="instructorphoto"><img src="./professional_prof_pic.JPG"></div>
-    <div>Sarah Chen</div>
-    </a>
+  <div style="color:#900;" align="center">
+   <br>
+  <!--  <p> Spotlight, CVPR 2017 </p>
+   <p> <a href="http://languageandvision.com/">Spotlight, Language and Vision workshop</a> </p>
+   <p> <a href="http://www.visualqa.org/abstracts.html"> Poster, VQA workshop</a> </p> -->
   </div>
-</div>
-<div style="color:#900;" align="center">
- <br>
-<!--  <p> Spotlight, CVPR 2017 </p>
- <p> <a href="http://languageandvision.com/">Spotlight, Language and Vision workshop</a> </p>
- <p> <a href="http://www.visualqa.org/abstracts.html"> Poster, VQA workshop</a> </p> -->
-</div>
 </div>
 
 <div class="sechighlight">
@@ -110,57 +110,48 @@
 </div>
 
 <div class="container sec">
-
   <h2></h2>
+  There are three main sections described in the paper: 
 
-There are three main sections described in the paper: 
+  <h2>1. Swath Gaps</h2>
+  We do stuff.
+    <div id="gallery" align="center">
+      <div class="egimg" align="center">
+        <img src="./earth_swath_gaps.png" style="height:300px; width: auto;">
+      </div>
+    </div>
 
-<h2>1. Swath Gaps</h2>
+  <h2>2. Filling Methods</h2>
+  We do stuff.
+    <div id="gallery" align="center">
+      <div class="egimg">
+        <img src="./filling_methods.png" style="height:300px; width: auto;">
+      </div>
+    </div>
 
-We do stuff.
-
- <div id="gallery" align="center">
-  <div class="egimg" align="center">
-   <img src="./earth_swath_gaps.png" style="height:500px;">
-  </div>
- </div>
-
-<h2>2. Filling Methods</h2>
-  
-We do stuff.
-  
- <div id="gallery" align="center">
-  <div class="egimg">
-   <img src="./filling_methods.png" style="height:500px;">
-  </div>
- </div>
-
-<h2>3. Activation Maps</h2>
-  
-We do stuff.
-
- <div id="gallery" align="center">
-  <div class="egimg" align="center">
-   <img src="./swath_gap_activation_maps.png" style="height:500px;">
-  </div>
- </div>
-
+  <h2>3. Activation Maps</h2>
+  We do stuff.
+    <div id="gallery" align="center">
+      <div class="egimg" align="center">
+        <img src="./swath_gap_activation_maps.png" style="height:500px; width: auto;">
+      </div>
+    </div>
 </div>
 
 <div class="sechighlight">
-<div id="footer">
-This research is supported by SpaceML.
-<br>
-<br>
-We would like to thank Anirudh Koul, Siddha Ganju, Meher Anand Kasam, and Satyarth Praveen for their contribution. 
-<br>
-<br>
-Website code reference: 
-<a href="http://cs.stanford.edu/people/karpathy/densecap/">DenseCap: Fully Convolutional Localization Networks for Dense Captioning</a>
-<br>
-<br>
-Thank you Salvador Medina for helping generate the <a href="https://github.com/salmedina/pdf2thumb">pretty pdf.</a>
-</div>
+  <div id="footer">
+    This research is supported by SpaceML.
+    <br>
+    <br>
+    We would like to thank Anirudh Koul, Siddha Ganju, Meher Anand Kasam, and Satyarth Praveen for their contribution. 
+    <br>
+    <br>
+    Website code reference: 
+    <a href="http://cs.stanford.edu/people/karpathy/densecap/">DenseCap: Fully Convolutional Localization Networks for Dense Captioning</a>
+    <br>
+    <br>
+    Thank you Salvador Medina for helping generate the <a href="https://github.com/salmedina/pdf2thumb">pretty pdf.</a>
+  </div>
 </div>
 
 <!-- jQuery and Boostrap -->

@@ -127,9 +127,9 @@
 <div class="container sec">
   <h2></h2>
   <h2>What are Swath Gaps?</h2>
-  ....
+  Swath gaps are empty or no data regions that occur in MODIS imagery. They exist because the MODIS satellites have a swath bandwidth of only 2330 km wide, causing consecutive orbits at the equator to miss coverage. Due to this missing coverage, these regions of missing data are present primarily as nine spindle shapes around the equator; however, they also occur at the North and South Poles during seasons of minimal sunlight. This uncollected data can be visualized as black spindles or swath gaps by NASA's Earth Observing System Data and Information System in the <a href="https://worldview.earthdata.nasa.gov/" target="_blank">NASA Worldview</a>.
   <h2>Why are Swath Gaps important?</h2>
-  ....
+  Through data exploration experiments and input from the NASA IMPACT team, we noted that similarity search experiments that find the most similar image, supposedly based on regions of interests (ROIs) such as hurricanes or beaches, instead return images with similarly placed swath gaps. These search engines focus on swath gaps, rather than concentrating on the ROI. Thus, we determine that when notable swath gaps are present in satellite imagery, specifically used for training Earth-sciences machine learning (ML) models, these areas of missing data render the entire image unusable by unsupervised training models. Further, ML pattern recognition algorithms begin recognizing the image's swath gap as its main feature, rather than the features of its primary ROI. This is an issue because, given the nature of satellite imagery, events of interest or ROIs are already quite sporadic in regards to rare events such as tornadoes, wildfires, and volcanic eruptions, and thus every piece of data is valuable. With already limited data, the occurrence of a swath gap overlapping the ROI further reduces the available data.
   We address the problem that swath gaps create when present in unlabeled image datasets that are used to train unsupervised machine learning models. The following is an example of swath gaps present due to NASA Terra and NASA Aqua satellite pathways.
   <br>
   <br>
@@ -158,8 +158,7 @@
   <br>
 
   <h2>Evaluation Activation Maps</h2>
-  One way in which we assess our fill methods is by analyzing the effects they have on activation maps as seen below..... add details on search retrieval results 
-  <br>
+  One way in which we assess our fill methods is by analyzing the effects they have on activation maps as seen below. We further evaluated our fill methods by using an autoencoder to perform similarity searches - given an input image, we ask the autoencoder to return the four most similar images from the dataset.  Separate autoencoder models with each augmentation policy are trained. Testing was then conducted on the three filling methods by querying images filled with our methods into the autoencoder. These results greatly improved as methodology increased from method one (Random RGB) to two (Pixel RGB) to three (Neighbor RGB), with successively more images categorized correctly per fill method. Repetition of this experiment indicated that filling method three, Neighbor RGB, was the most efficient, with consistently three or four out of the four "most similar" images being categorized correctly.
   <br>
   <br>
     <div id="gallery" align="center">
